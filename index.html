@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-info">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <img src="./image/logo ecommerce 1.png" alt="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Acceuil">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Apropos">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produit">Produit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <div>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Recherche</button>
+              </form>
+            </div>
+            <div>
+              <button class="btn btn-outline-light ms-5 me-4" data-bs-toggle="offcanvas"
+                data-bs-target="#cartOffcanvas">
+                🛒 <span id="cartCount" class="badge bg-danger">0</span>
+              </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Mon panier</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul id="cartItems" class="list-group mb-5"></ul>
+                <button class="btn btn-success py-0 px-2">Commander</button>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <main>
+    <section class=" text-center bg-warning-subtle py-4 text-dark" id="Acceuil">
+      <h2 class="mt-0 mb-3">Bienvenue chez GoShop</h2>
+      <p class="mb-0 mt-0">Découvrez nos plats savoureux préparés avec amour et livrés rapidement chez vous.</p>
+    </section>
+    <section>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./image/baniere1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./image/ama.png" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/slide.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="py-5 bg-body-secondary" id="Apropos">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2>À propos de GoShop</h2>
+          <p class="text-muted">Découvrez nos valeurs et ce qui nous rend uniques</p>
+        </div>
+        <div class="row g-4 align-items-stretch text-center">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm rounded-4 card-hover">
+              <div class="card-body">
+                <h5>Qualité</h5>
+                <p>Des plats frais et savoureux préparés avec soin.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm rounded-4 card-hover">
+              <div class="card-body">
+                <h5 class="card-title">Rapidité</h5>
+                <p class="card-text">Livraison rapide pour satisfaire vos envies.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm rounded-4 card-hover">
+              <div class="card-body">
+                <h5 class="card-title">Confiance</h5>
+                <p class="card-text">Service fiable et sécurisé à chaque commande.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-body-secondary" id="produit">
+      <div class=" container p-0">
+        <div class="text-center mb-5 row">
+          <h2>Nos Produits</h2>
+          <p class="text-muted">Découvrez nos plats délicieux et savoureux</p>
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <div class="card h-100 box-shadow-sm">
+                <img src="./image/image3.jpg" class="card-img-top img-fluid" style="height: 200px; object-fit: cover">
+                <div class="card-body text-center">
+                  <h5>Salade de viande</h5>
+                  <p>Salade de viande mélange de poivrons laitue sésame bbq sauce vue de côté</p>
+                  <span class="badge bg-success mb-2">disponible</span>
+                  <p>
+                    <span class="text-dark  fw-bold">prix:</span>
+                    <span>2000 F CFA (XOF)</span>
+                  </p>
+                  <a href="" class="btn btn-success me-3"> Acheter</a>
+                  <button class="btn btn-warning add-to-cart" data-name="Salade de viande" data-price="2000">
+                    Ajouter au panier
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 box-shadow-sm">
+                <img src="./image/image2.jpg" alt="" class="card-img-top img-fluid" style="height: 200px; object-fit: cover">
+                <div class="card-body text-center">
+                  <h5>Des crevettes</h5>
+                  <p>Des crevettes au-dessus en pâte avec du riz rouge et des légumes verts </p>
+                  <span class="badge bg-success mb-2">disponible</span>
+                  <p>
+                    <span class="text-dark  fw-bold">prix:</span>
+                    <span>2000 F CFA (XOF)</span>
+                  </p>
+                  <a href="" class="btn btn-success me-3"> Acheter</a>
+                  <button class="btn btn-warning add-to-cart" data-name="Des crevettes" data-price="2000">
+                    Ajouter au panier
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 box-shadow-sm">
+                <img src="./image/img9.jpg" alt="" class="card-img-top img-fluid" style="height: 200px; object-fit: cover">
+                <div class="card-body text-center">
+                  <h5>Poulet frit</h5>
+                  <p>Poulet frit accompagné de pommes de terre grillées, d'aubergines, de tomates et de poivrons.</p>
+                  <span class="badge bg-success mb-3">disponible</span>
+                  <p>
+                    <span class="fw-bold">Prix:</span>
+                    <span>3 500 F CFA (XOF)</span>
+                  </p>
+                  <a href="" class="btn btn-success me-3"> Acheter</a>
+                  <button class="btn btn-warning add-to-cart" data-name="Poulet frit" data-price="3500">
+                    Ajouter au panier
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 box-shadow-sm">
+                <img src="./image/image5.jpg" alt="" class="card-img-top img-fluid" style="height: 200px; object-fit: cover">
+                <div class="card-body text-center">
+                  <h5>Ragoût de viande aux tomates</h5>
+                  <p>Ragoût de viande aux tomates, aux herbes et aux bâtonnets de galetta.</p>
+                  <span class="badge bg-success mb-2">disponible</span>
+                  <p>
+                    <span class="text-dark  fw-bold">prix:</span>
+                    <span>2 000 F CFA (XOF)</span>
+                  </p>
+                  <a href="" class="btn btn-success me-3"> Acheter</a>
+                  <button class="btn btn-warning add-to-cart" data-name="Ragoût de viande aux tomates"
+                    data-price="2000">
+                    Ajouter au panier
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 box-shadow-sm">
+                <img src="./image/image7.jpg" class="card-img-top img-fluid" alt="" style="height: 200px; object-fit: cover">
+                <div class="card-body text-center">
+                  <h5>Poulet frit</h5>
+                  <p>Le poulet frit garni d'oignons verts était assis soigneusement dans l'assiette.</p>
+                  <span class="badge bg-success mb-2">disponible</span>
+                  <p>
+                    <span class="text-dark  fw-bold">prix:</span>
+                    <span>2 500 F CFA (XOF)</span>
+                  </p>
+                  <a href="" class="btn btn-success me-3"> Acheter</a>
+                  <button class="btn btn-warning add-to-cart" data-name="djkshkjds" data-price="2500">
+                    Ajouter au panier
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 box-shadow-sm">
+                <img src="./image/image8.png" class="card-img-top img-fluid" alt="" style="height: 200px; object-fit: cover">
+                <div class="card-body text-center">
+                  <h5>Rouleaux de printemps frits</h5>
+                  <p>Rouleaux de printemps frits rempli de légumes et de viande.</p>
+                  <span class="badge bg-success mb-2">disponible</span>
+                  <p>
+                    <span class="text-dark  fw-bold">prix:</span>
+                    <span>3 000 F CFA (XOF)</span>
+                  </p>
+                  <a href="" class="btn btn-success me-3"> Acheter</a>
+                  <button class="btn btn-warning add-to-cart" data-name="djkshkjds" data-price="2500">
+                    Ajouter au panier
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 box-shadow-sm">
+                <img src="./image/image4.jpg" class="card-img-top img-fluid" alt="" style="height: 200px; object-fit: cover">
+                <div class="card-body text-center">
+                  <h5>pommes de terre au four</h5>
+                  <p>Des pommes de terre au four avec de la viande d'agneau et des légumes </p>
+                  <span class="badge bg-success mb-2">disponible</span>
+                  <p>
+                    <span class="text-dark  fw-bold">prix:</span>
+                    <span>2 500 F CFA (XOF)</span>
+                  </p>
+                  <a href="" class="btn btn-success me-3"> Acheter</a>
+                  <button class="btn btn-warning add-to-cart" data-name="djkshkjds" data-price="2500">
+                    Ajouter au panier
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 box-shadow-sm">
+                <img src="./image/img10.jpg" class="card-img-top img-fluid" alt="" style="height: 200px; object-fit: cover">
+                <div class="card-body text-center">
+                  <h5>poulet kebab</h5>
+                  <p>Bœuf, poulet kebab, barbecue avec des pommes de terre grillées et tomates et servi avec du riz </p>
+                  <span class="badge bg-success mb-2">disponible</span>
+                  <p>
+                    <span class="text-dark  fw-bold">prix:</span>
+                    <span>2 500 F CFA (XOF)</span>
+                  </p>
+                  <a href="" class="btn btn-success me-3"> Acheter</a>
+                  <button class="btn btn-warning add-to-cart" data-name="djkshkjds" data-price="2500">
+                    Ajouter au panier
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=" bg-body-secondary " id="contact">
+      <div class="container py-5 d-flex justify-content-center">
+        <form class="p-4 shadow rounded-4 bg-body-secondary w-100" style="max-width: 450px;">
+          <h3 class="text-center mb-4">Contactez-nous</h3>
+          <div class="mb-3">
+            <label for="">Nom</label>
+            <input type="text" class="form-control" placeholder="Entrez votre nom" required>
+          </div>
+          <div class="mb-3">
+            <label for="" class="text-dark">Prenom</label>
+            <input type="text" class="form-control" placeholder="Entrez votre prenom" required>
+          </div>
+          <div class="mb-3">
+            <label for="">Email</label>
+            <input type="email" class="form-control" placeholder=" Entrezvotre email" required>
+          </div>
+          <div class="mb-3">
+            <label for="">Telephone</label>
+            <input type="tel" class="form-control" placeholder=" Entrez votre numero " required>
+          </div>
+          <div class="mb-3">
+            <label for="">Message</label>
+            <textarea class="form-control" rows="4" placeholder="Ecrivez votre message ici" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">
+            Envoyer
+          </button>
+        </form>
+      </div>
+    </section>
+    <section>
+    </section>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </main>
+  <footer class="footer mt-0">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>GoShop</h3>
+        <p>Votre service de restauration en ligne premium.
+          Des chefs étoilés cuisinent pour vous.
+          Livraison en moins de 45 minutes.</p>
+      </div>
+      <div class="footer-box">
+        <h3>Lien rapide</h3>
+        <ul>
+          <li><a href="#Acceuil">Accueil</a></li>
+          <li><a href="#Apropos">Apropos</a></li>
+          <li><a href="#produit">produit</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <p> Ouagadougou, Burkina Faso</p>
+        <p> +226 04456019</p>
+        <p>contact@monsite.com</p>
+      </div>
+      <div class="footer-botton">
+        <p>copyright 2025 GoShop | Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
